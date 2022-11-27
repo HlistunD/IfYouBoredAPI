@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App { 
+    background-color: rgba(255, 255, 255, 0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brush {
+    position: absolute;
+    z-index: -1;
+    border-radius: 30px;
 }
+.images{
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body {    
+    background-image: url("Q&A2.jpg");
+    background-size: cover;
+    
 }
+h1, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    padding: 20px;
+    font-weight: bolder;
+}
+h4 {
+    text-align: center;
+    font-size: 21px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+h1 {
+    position: relative;
+    margin-top: 50px;
+}
+.apiBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 43%;
+}
+.showAdvice {
+text-align: center;
+font-family: 'Cormorant Garamond', serif;
+font-size: 20px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+.btn {
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #FCE2DB;
+    border-color: #CFD2CF;
 }
